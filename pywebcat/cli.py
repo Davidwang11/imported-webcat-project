@@ -20,6 +20,7 @@ def main():
         verbose,
     ) = parse_args()
     wc = WebCAT()
+    print("There is not any error")
     for item in itertools.product(station, year, month, day, time):
         try:
             wc.generate_url(*item)  # generate url from the input data
